@@ -1,0 +1,2 @@
+#progress { width: 200px; background: #eee; border: 1px solid #ccc; height: 20px; }
+#progress .bar { height:20px; display: inline-block; background: #E61414; width: 0; }
