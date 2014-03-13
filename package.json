@@ -1,11 +1,15 @@
 {
   "name": "ajaxchallenge",
   "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js"
+  "start": "node app.js"
   },
   "dependencies": {
-    "express": "*",
+    "express": "3.5.0",
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:ajaxchallenge.git"
+  }
 }
