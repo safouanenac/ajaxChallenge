@@ -50,7 +50,7 @@
 					data: JSON.stringify(data),
 					contentType: 'application/json',
 					//url: 'http://localhost:3000/endpoint',	
-					 url: 'http://192.168.1.7:3000/endpoint',	
+					 url: 'http://http://ajaxapptest.herokuapp.com:3000/endpoint',	
 					async: false,
 					// executing befor sending the request
 					beforeSend: function(jqXHR,settings){
