@@ -49,8 +49,8 @@
 					type: 'POST',
 					data: JSON.stringify(data),
 					contentType: 'application/json',
-					//url: 'http://localhost:3000/endpoint',	
-					 url: 'http://ajaxapptest.herokuapp.com/endpoint',	
+					url: 'http://localhost:3000/',	
+					 //url: 'http://ajaxapptest.herokuapp.com/endpoint',	
 					async: false,
 					// executing befor sending the request
 					beforeSend: function(jqXHR,settings){

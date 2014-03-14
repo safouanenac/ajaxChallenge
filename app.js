@@ -3,7 +3,7 @@ var app = express();
  
 app.use(express.json()).use( express.urlencoded()).use(express.static(__dirname + '/public'));
 
-app.post('/endpoint', function(req, res){
+app.post('/', function(req, res){
 	stat =["Online","Offline"];
 	req.body.stat=stat[(Math.floor(Math.random() * 2))]
 				
