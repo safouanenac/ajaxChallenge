@@ -7,9 +7,5 @@
   },
   "scripts": {
   "start": "node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@heroku.com:ajaxchallenge.git"
   }
 }
