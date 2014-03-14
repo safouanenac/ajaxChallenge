@@ -1,6 +1,6 @@
 ﻿	$(function(){
 	console.log("debut du script");
-	$("#select_div").hide( );
+	//$("#select_div").hide( );
 	
 	$('#select_link').click(function(e){
 		e.preventDefault();
@@ -24,11 +24,11 @@
 		
 		
 		//catch the event done, when all requests finish
-		 $.when(ajaxs).done(function (objres){
+	/*	$.when(ajaxs).done(function (objres){
 			// remove the bar from the screen
 			$("#select_div").show();
-			//$("#progress ").hide();
-			});
+			// $("#progress ").hide();
+			});*/
 		
 		// Loop to create (bnRequests=)100 AJAX requests 
 		var i;
@@ -56,20 +56,21 @@
 					// executing befor sending the request
 					beforeSend: function(jqXHR,settings){
 						//INCREMENT SENDBAR
-						var old=$("#progress .bar").width();
-								console.log("old = ",old);
-								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) });
+						sendBar++;
+						console.log("sendBar= ",sendBar,"from id=",data.userid);
 						},
 					// exxecuting when request success
 					success: function(data) {
 								//INCREMENT RECEIVE BAR
+								receiveBar++;
 								var old=$("#progress .bar").width();
 								console.log("old = ",old);
-								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) });
+								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
 								console.log("receivebar = ",receiveBar,"from id= ",data.userid);
 								var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
 									"<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
-									$("#select_div").append(html);
+									$("#select_div").append(html).show();
+									
 							},
 					error: function(){
 					var old=$("#progress .bar").width();
