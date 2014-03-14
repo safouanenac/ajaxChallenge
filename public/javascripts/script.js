@@ -55,7 +55,7 @@
 					//async: false,
 					// executing befor sending the request
 					// exxecuting when request success
-					 success: function finished(){
+					 success: function(){
 							console.log("job finished");
 							var old=$("#progress .bar").width();
 							console.log("old = ",old);
@@ -65,8 +65,8 @@
 							$("#select_div").append(html).show();
 					}
 			});		
-		});
-	}
+		}
+	});
 					/*End function sendAjax*/
 					
 			
