@@ -5,7 +5,7 @@
 	$('#select_link').click(function(e){
 		e.preventDefault();
 		console.log('select_link clicked');
-		
+		$("#select_div").hide();
 		/* creating a simple data that contains
 		 * 'iduser' the id of the user we ask if he's online
 		 * 'stat' contains the status of this user (online or offline) 
@@ -24,11 +24,11 @@
 		
 		
 		//catch the event done, when all requests finish
-	/*	$.when(ajaxs).done(function (objres){
+	$.when(ajaxs).done(function (objres){
 			// remove the bar from the screen
 			$("#select_div").show();
-			// $("#progress ").hide();
-			});*/
+			$("#progress ").hide();
+			});
 		
 		// Loop to create (bnRequests=)100 AJAX requests 
 		var i;
@@ -52,42 +52,22 @@
 					// to test on local 
 					//url: 'http://localhost:3000/',	
 					url: '/',	//using the '/' url to prevent some cross-domain security error
-					async: false,
+					//async: false,
 					// executing befor sending the request
-					beforeSend: function(jqXHR,settings){
-						//INCREMENT SENDBAR
-						sendBar++;
-						console.log("sendBar= ",sendBar,"from id=",data.userid);
-						},
 					// exxecuting when request success
-					 success: finished(),	//function(data) {
-								//INCREMENT RECEIVE BAR
-								// receiveBar++;
-								// var old=$("#progress .bar").width();
-								// console.log("old = ",old);
-								// $("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
-								// console.log("receivebar = ",receiveBar,"from id= ",data.userid);
-								// var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
-									// "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
-									// $("#select_div").append(html).show();
-									
-							// },
-					error: function(){
-					var old=$("#progress .bar").width();
-								console.log("old = ",old);
-								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) });
-					
-					}
+					 success: finished()
 					});
 					}
+					/*End function sendAjax*/
+					
 			function finished(){
-			console.log("job finished");
-			var old=$("#progress .bar").width();
-			console.log("old = ",old);
-			$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
-			var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
-									 "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
-			$("#select_div").append(html).show();
+				console.log("job finished");
+				var old=$("#progress .bar").width();
+				console.log("old = ",old);
+				$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
+				var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
+										 "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
+				$("#select_div").append(html).show();
 			}
 	});		
 });
