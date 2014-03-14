@@ -24,11 +24,11 @@
 		
 		
 		//catch the event done, when all requests finish
-	$.when(ajaxs).done(function (objres){
-			// remove the bar from the screen
-			 $("#select_div").show();
-			 $("#progress ").hide();
-			 });
+	// $.when(ajaxs).done(function (objres){
+			//remove the bar from the screen
+			 // $("#select_div").show();
+			 // $("#progress ").hide();
+			 // });
 		
 		// Loop to create (bnRequests=)100 AJAX requests 
 		var i;
