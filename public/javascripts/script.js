@@ -69,7 +69,7 @@
 								var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
 									"<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
 									$("#select_div").append(html);
-							}
+							},
 					error: function(){
 					var old=$("#progress .bar").width();
 								console.log("old = ",old);
