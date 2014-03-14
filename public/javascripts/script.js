@@ -55,21 +55,21 @@
 					//async: false,
 					// executing befor sending the request
 					// exxecuting when request success
-					 success: finished()
-					});
+					 success: function finished(){
+							console.log("job finished");
+							var old=$("#progress .bar").width();
+							console.log("old = ",old);
+							$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
+							var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
+													 "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
+							$("#select_div").append(html).show();
 					}
+			});		
+		});
+	}
 					/*End function sendAjax*/
 					
-			function finished(){
-				console.log("job finished");
-				var old=$("#progress .bar").width();
-				console.log("old = ",old);
-				$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
-				var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
-										 "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
-				$("#select_div").append(html).show();
-			}
-	});		
+			
 });
                      /*$.ajax({
                         dataType: 'jsonp',
