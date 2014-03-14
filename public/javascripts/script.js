@@ -52,7 +52,7 @@
 					// to test on local 
 					//url: 'http://localhost:3000/',	
 					 url: '/',	//using the '/' url to prevent some cross-domain security error
-					async: false,
+					//async: false,
 					// executing befor sending the request
 					beforeSend: function(jqXHR,settings){
 						//INCREMENT SENDBAR
