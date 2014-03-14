@@ -25,7 +25,7 @@
 		
 		//catch the event done, when all requests finish
 	$.when(ajaxs).done(function (objres){
-			 remove the bar from the screen
+			// remove the bar from the screen
 			 $("#select_div").show();
 			 $("#progress ").hide();
 			 });
