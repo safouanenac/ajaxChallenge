@@ -24,11 +24,11 @@
 		
 		
 		//catch the event done, when all requests finish
-	// $.when(ajaxs).done(function (objres){
-			// remove the bar from the screen
-			// $("#select_div").show();
-			// $("#progress ").hide();
-			// });
+	$.when(ajaxs).done(function (objres){
+			 remove the bar from the screen
+			 $("#select_div").show();
+			 $("#progress ").hide();
+			 });
 		
 		// Loop to create (bnRequests=)100 AJAX requests 
 		var i;
@@ -62,7 +62,7 @@
 							$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
 							var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
 													 "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
-							$("#select_div").append(html).show();
+							$("#select_div").append(html);
 					}
 			});		
 		}
@@ -71,24 +71,5 @@
 					
 			
 });
-                     /*$.ajax({
-                        dataType: 'jsonp',
-                        data: "data=yeah",						
-                        jsonp: 'callback',
-                        url: 'http://localhost:3000/endpoint?callback=?',						
-                        success: function(data) {
-                            console.log('success');
-                            console.log(JSON.stringify(data));
-                        }
-                    });*/
- 
- 
-					/*$.ajax('http://localhost:3000/endpoint', {
-					        type: 'POST',
-					        data: JSON.stringify(data),
-					        contentType: 'application/json',
-					        success: function() { console.log('success');},
-					        error  : function() { console.log('error');}
-					});*/
-               
+                     
         
