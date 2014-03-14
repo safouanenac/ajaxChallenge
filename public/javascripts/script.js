@@ -51,7 +51,7 @@
 					contentType: 'jsonp',
 					// to test on local 
 					//url: 'http://localhost:3000/',	
-					 url: '/',	//using the '/' url to prevent some cross-domain security error
+					url: '/',	//using the '/' url to prevent some cross-domain security error
 					async: false,
 					// executing befor sending the request
 					beforeSend: function(jqXHR,settings){
@@ -60,18 +60,18 @@
 						console.log("sendBar= ",sendBar,"from id=",data.userid);
 						},
 					// exxecuting when request success
-					complete: function(data) {
+					 success: finished(),	//function(data) {
 								//INCREMENT RECEIVE BAR
-								receiveBar++;
-								var old=$("#progress .bar").width();
-								console.log("old = ",old);
-								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
-								console.log("receivebar = ",receiveBar,"from id= ",data.userid);
-								var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
-									"<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
-									$("#select_div").append(html).show();
+								// receiveBar++;
+								// var old=$("#progress .bar").width();
+								// console.log("old = ",old);
+								// $("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
+								// console.log("receivebar = ",receiveBar,"from id= ",data.userid);
+								// var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
+									// "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
+									// $("#select_div").append(html).show();
 									
-							},
+							// },
 					error: function(){
 					var old=$("#progress .bar").width();
 								console.log("old = ",old);
@@ -79,7 +79,16 @@
 					
 					}
 					});
-					}	
+					}
+			function finished(){
+			console.log("job finished");
+			var old=$("#progress .bar").width();
+			console.log("old = ",old);
+			$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) }).show();
+			var html = "<div id='user'"+data.userid+" class='binder-user-note' >" +
+									 "<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
+			$("#select_div").append(html).show();
+			}
 	});		
 });
                      /*$.ajax({
