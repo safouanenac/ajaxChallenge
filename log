@@ -1,0 +1,103 @@
+2014-03-14T01:13:02+00:00 heroku[slug-compiler]: Slug compilation started
+2014-03-14T01:13:06.808376+00:00 heroku[web.1]: State changed from crashed to starting
+2014-03-14T01:13:06+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-03-14T01:13:08.717945+00:00 heroku[web.1]: Starting process with command `npm start`
+2014-03-14T01:13:10.780188+00:00 app[web.1]: 
+2014-03-14T01:13:10.780188+00:00 app[web.1]: > ajaxchallenge@0.1.0 start /app
+2014-03-14T01:13:10.780188+00:00 app[web.1]: > node app.js
+2014-03-14T01:13:10.780188+00:00 app[web.1]: 
+2014-03-14T01:13:11.670118+00:00 heroku[web.1]: State changed from starting to up
+2014-03-14T01:14:10.828515+00:00 heroku[web.1]: State changed from up to starting
+2014-03-14T01:14:13.751067+00:00 heroku[web.1]: Starting process with command `npm start`
+2014-03-14T01:14:14.312450+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-14T01:14:16.538664+00:00 heroku[web.1]: Process exited with status 143
+2014-03-14T01:14:10.379849+00:00 heroku[api]: Add NODE_ENV config by ennaceur.safouen@gmail.com
+2014-03-14T01:14:10.379919+00:00 heroku[api]: Release v8 created by ennaceur.safouen@gmail.com
+2014-03-14T01:14:17.944103+00:00 app[web.1]: 
+2014-03-14T01:14:17.944103+00:00 app[web.1]: 
+2014-03-14T01:14:17.944103+00:00 app[web.1]: > ajaxchallenge@0.1.0 start /app
+2014-03-14T01:14:17.944103+00:00 app[web.1]: > node app.js
+2014-03-14T01:14:19.185497+00:00 heroku[web.1]: State changed from starting to up
+2014-03-14T01:13:06.548170+00:00 heroku[api]: Deploy ae981ac by ennaceur.safouen@gmail.com
+2014-03-14T01:13:06.548244+00:00 heroku[api]: Release v7 created by ennaceur.safouen@gmail.com
+2014-03-14T01:17:02.587268+00:00 heroku[api]: Scale to web=1 by ennaceur.safouen@gmail.com
+2014-03-14T02:15:37.375446+00:00 heroku[web.1]: Idling
+2014-03-14T02:15:37.376164+00:00 heroku[web.1]: State changed from up to down
+2014-03-14T02:15:43.301540+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-14T02:15:46.105548+00:00 heroku[web.1]: Process exited with status 143
+2014-03-14T11:24:50.178615+00:00 heroku[web.1]: Unidling
+2014-03-14T11:24:50.178959+00:00 heroku[web.1]: State changed from down to starting
+2014-03-14T11:24:51.934312+00:00 heroku[web.1]: Starting process with command `npm start`
+2014-03-14T11:24:53.084583+00:00 app[web.1]: 
+2014-03-14T11:24:53.084583+00:00 app[web.1]: > ajaxchallenge@0.1.0 start /app
+2014-03-14T11:24:53.084583+00:00 app[web.1]: 
+2014-03-14T11:24:53.084583+00:00 app[web.1]: > node app.js
+2014-03-14T11:24:53.782765+00:00 heroku[web.1]: State changed from starting to up
+2014-03-14T11:24:54.245510+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=58a90683-7f11-4b0b-91ed-91a5aa020e1b fwd="107.20.45.188" dyno=web.1 connect=1ms service=14ms status=200 bytes=948
+2014-03-14T11:25:15.278689+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=54229e1e-096d-4cf0-97c3-28c12fcb8584 fwd="197.15.213.148" dyno=web.1 connect=4ms service=9ms status=200 bytes=948
+2014-03-14T11:25:15.554611+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=4e645635-e2c1-437c-bb8d-be7686f1baba fwd="197.15.213.148" dyno=web.1 connect=1ms service=2ms status=200 bytes=3461
+2014-03-14T11:25:15.735097+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=ajaxchallenge.herokuapp.com request_id=dc1328bc-a331-4a5d-8586-13abccbd4a12 fwd="197.15.213.148" dyno=web.1 connect=1ms service=5ms status=404 bytes=193
+2014-03-14T11:26:46.428313+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=4e511c47-b250-4840-abb2-d495f53fb74c fwd="197.15.213.148" dyno=web.1 connect=1ms service=4ms status=304 bytes=237
+2014-03-14T11:26:46.922597+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchal
+lenge.herokuapp.com request_id=cc5f3b37-0c10-4001-91e3-f4a37f270dee fwd="197.15.213.148" dyno=web.1 connect=1ms service=3ms status=304 bytes=238
+2014-03-14T11:26:46.914819+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=4de9545d-c694-449b-9661-37fb12eba00f fwd="197.15.213.148" dyno=web.1 connect=1ms service=3ms status=304 bytes=237
+2014-03-14T11:25:15.423645+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=afa0a7c7-adb6-45c7-b242-0b8a4d333339 fwd="197.15.213.148" dyno=web.1 connect=0ms service=3ms status=200 bytes=456
+2014-03-14T11:29:41+00:00 heroku[slug-compiler]: Slug compilation started
+2014-03-14T11:29:51.680178+00:00 heroku[api]: Deploy 9b4a300 by ennaceur.safouen@gmail.com
+2014-03-14T11:29:51.680178+00:00 heroku[api]: Release v9 created by ennaceur.safouen@gmail.com
+2014-03-14T11:29:51.778390+00:00 heroku[web.1]: State changed from up to starting
+2014-03-14T11:29:53.430452+00:00 heroku[web.1]: Starting process with command `npm start`
+2014-03-14T11:29:53+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-03-14T11:29:54.521255+00:00 app[web.1]: 
+2014-03-14T11:29:54.521255+00:00 app[web.1]: > node app.js
+2014-03-14T11:29:54.521255+00:00 app[web.1]: 
+2014-03-14T11:29:54.521255+00:00 app[web.1]: > ajaxchallenge@0.1.0 start /app
+2014-03-14T11:29:55.074317+00:00 heroku[web.1]: State changed from starting to up
+2014-03-14T11:29:55.120297+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-14T11:29:55.893636+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2014-03-14T11:29:57.458269+00:00 heroku[web.1]: Process exited with status 22
+2014-03-14T11:30:01.813345+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=17c2b18a-0413-4758-972d-d30eafc07262 fwd="197.15.213.148" dyno=web.1 connect=8ms service=20ms status=200 bytes=948
+2014-03-14T11:30:02.037914+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=ec092321-d1f0-407e-aac5-531b96cc7786 fwd="197.15.213.148" dyno=web.1 connect=14ms service=20ms status=200 bytes=456
+2014-03-14T11:30:02.161822+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=f7390e32-9731-44b4-905f-356014897071 fwd="197.15.213.148" dyno=web.1 connect=2ms service=15ms status=200 bytes=3460
+2014-03-14T11:31:23.246533+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=f9c420da-f004-4479-b54b-baeacc25c1df fwd="197.15.213.148" dyno=web.1 connect=1ms service=15ms status=304 bytes=237
+2014-03-14T11:33:43+00:00 heroku[slug-compiler]: Slug compilation started
+2014-03-14T11:33:49+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-03-14T11:33:51.002163+00:00 heroku[web.1]: Starting process with command `npm start`
+2014-03-14T11:33:51.564161+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-14T11:33:52.474775+00:00 app[web.1]: 
+2014-03-14T11:33:52.474775+00:00 app[web.1]: 
+2014-03-14T11:33:52.474775+00:00 app[web.1]: > node app.js
+2014-03-14T11:33:52.474775+00:00 app[web.1]: > ajaxchallenge@0.1.0 start /app
+2014-03-14T11:33:52.710358+00:00 heroku[web.1]: State changed from starting to up
+2014-03-14T11:33:49.415034+00:00 heroku[web.1]: State changed from up to starting
+2014-03-14T11:33:53.269873+00:00 heroku[web.1]: Process exited with status 143
+2014-03-14T11:34:35.548441+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=63ecfebd-cb69-4fad-9349-adb9b1a96b07 fwd="197.15.213.148" dyno=web.1 connect=1ms service=15ms status=200 bytes=948
+2014-03-14T11:36:31.946145+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=0d544b70-4194-4bcf-be0a-cdbde914ca5e fwd="197.15.213.148" dyno=web.1 connect=5ms service=6ms status=304 bytes=237
+2014-03-14T11:36:32.263541+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=a8dc0544-f63b-4bea-986b-280787b6f228 fwd="197.15.213.148" dyno=web.1 connect=1ms service=8ms status=304 bytes=237
+2014-03-14T11:36:32.264979+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=940b5724-d2d7-47d2-ac9b-db18150
+5d181 fwd="197.15.213.148" dyno=web.1 connect=2ms service=5ms status=304 bytes=238
+2014-03-14T11:33:48.975257+00:00 heroku[api]: Deploy d3844da by ennaceur.safouen@gmail.com
+2014-03-14T11:33:48.975357+00:00 heroku[api]: Release v10 created by ennaceur.safouen@gmail.com
+2014-03-14T11:34:35.925254+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=77946dcd-a22d-4b36-bcaa-126148a87d53 fwd="197.15.213.148" dyno=web.1 connect=1ms service=4ms status=200 bytes=3455
+2014-03-14T11:50:01.334002+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=48dfd632-29bc-445f-ac64-22c9f70d4786 fwd="197.15.213.148" dyno=web.1 connect=2ms service=4ms status=304 bytes=237
+2014-03-14T11:50:01.502460+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=5a7bce39-b4c9-48d5-a01f-43381d4a5697 fwd="197.15.213.148" dyno=web.1 connect=1ms service=5ms status=304 bytes=237
+2014-03-14T11:50:01.513116+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=33ba0b84-545b-4ce8-9737-b35b5cbe11e7 fwd="197.15.213.148" dyno=web.1 connect=4ms service=7ms status=304 bytes=238
+2014-03-14T12:51:56.472866+00:00 heroku[web.1]: Idling
+2014-03-14T12:51:56.473755+00:00 heroku[web.1]: State changed from up to down
+2014-03-14T12:51:59.786853+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-03-14T12:52:00.762909+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2014-03-14T12:52:02.532792+00:00 heroku[web.1]: Process exited with status 22
+2014-03-14T14:57:58.622202+00:00 heroku[web.1]: Unidling
+2014-03-14T14:57:58.622559+00:00 heroku[web.1]: State changed from down to starting
+2014-03-14T14:58:00.917028+00:00 heroku[web.1]: Starting process with command `npm start`
+2014-03-14T14:58:02.948956+00:00 app[web.1]: 
+2014-03-14T14:58:02.948956+00:00 app[web.1]: > ajaxchallenge@0.1.0 start /app
+2014-03-14T14:58:02.948956+00:00 app[web.1]: > node app.js
+2014-03-14T14:58:02.948956+00:00 app[web.1]: 
+2014-03-14T14:58:03.915210+00:00 heroku[web.1]: State changed from starting to up
+2014-03-14T14:58:04.721900+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=e705c4c1-9f74-4a5c-8e1f-0a4daa84399d fwd="197.15.213.148" dyno=web.1 connect=2ms service=31ms status=304 bytes=237
+2014-03-14T14:58:05.009441+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=94289c02-bf1d-4c96-815b-71a8fc6ae9c4 fwd="197.15.213.148" dyno=web.1 connect=10ms service=37ms status=304 bytes=237
+2014-03-14T14:58:20.296018+00:00 heroku[router]: at=info method=GET path=/ host=ajaxchallenge.herokuapp.com request_id=d9f4bc64-ecac-473e-9d42-cea242e32a59 fwd="197.15.213.148" dyno=web.1 connect=1ms service=3ms status=304 bytes=237
+2014-03-14T14:58:20.549339+00:00 heroku[router]: at=info method=GET path=/stylesheets/style.css host=ajaxchallenge.herokuapp.com request_id=ed0725dd-4c4a-43f4-a2a4-d6c116f9ed5f fwd="197.15.213.148" dyno=web.1 connect=3ms service=11ms status=304 bytes=237
+2014-03-14T14:58:20.581126+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=abd34df9-6374-4284-8847-8e583478e07e fwd="197.15.213.148" dyno=web.1 connect=11ms service=19ms status=304 bytes=238
+2014-03-14T14:58:05.120394+00:00 heroku[router]: at=info method=GET path=/javascripts/script.js host=ajaxchallenge.herokuapp.com request_id=433886c9-4f78-4b41-936a-5c84bc2f0e49 fwd="197.15.213.148" dyno=web.1 connect=48ms service=104ms status=304 bytes=238
