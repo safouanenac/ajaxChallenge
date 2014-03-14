@@ -70,6 +70,12 @@
 									"<h1>User : "+data.userid+" Status "+data.stat +"</h1> </div>";
 									$("#select_div").append(html);
 							}
+					fail: function(){
+					var old=$("#progress .bar").width();
+								console.log("old = ",old);
+								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) });
+					
+					}
 					});
 					}	
 	});		
