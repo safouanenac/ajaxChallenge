@@ -13,7 +13,7 @@
 		var data = {"userid":0,"stat":'offline'},
 		ajaxs=[],  // ajaxs contains a list of all the AJAX requests, we create it to use the done() methode 
 		objres=[],
-		nbRequests=20; // the number of requests that we must send to the server
+		nbRequests=100; // the number of requests that we must send to the server
 		
 		
 		//sendBar & receiveBar to increment the progress bar, sendBar will be be incremented before
