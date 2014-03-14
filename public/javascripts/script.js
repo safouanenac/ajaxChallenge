@@ -49,19 +49,20 @@
 					type: 'POST',
 					data: JSON.stringify(data),
 					contentType: 'jsonp',
+					// to test on local 
 					//url: 'http://localhost:3000/',	
-					 url: '/',	
+					 url: '/',	//using the '/' url to prevent some cross-domain security error
 					async: false,
 					// executing befor sending the request
 					beforeSend: function(jqXHR,settings){
 						//INCREMENT SENDBAR
-						sendBar++;
-						console.log("sendBar= ",sendBar,"from id=",data.userid);
+						var old=$("#progress .bar").width();
+								console.log("old = ",old);
+								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) });
 						},
 					// exxecuting when request success
 					success: function(data) {
 								//INCREMENT RECEIVE BAR
-								receiveBar++;
 								var old=$("#progress .bar").width();
 								console.log("old = ",old);
 								$("#progress .bar").css({ width: (old+(progressWidth/nbRequests)) });
