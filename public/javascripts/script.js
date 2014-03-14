@@ -48,7 +48,7 @@
 			return $.ajax({
 					type: 'POST',
 					data: JSON.stringify(data),
-					contentType: 'application/json',
+					contentType: false,
 					//url: 'http://localhost:3000/',	
 					 url: 'http://ajaxapptest.herokuapp.com/',	
 					async: false,
