@@ -7,7 +7,7 @@ app.post('/', function(req, res){
 	stat =["Online","Offline"];
 	req.body.stat=stat[(Math.floor(Math.random() * 2))]
 				
-	console.log('body: '+JSON.stringify(req.body));
+	console.log('body: '+JSON.stringify(req.body.id));
 	res.send(req.body);
 	
 });
