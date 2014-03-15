@@ -52,8 +52,8 @@
 					contentType: "application/json; charset=utf-8",
 					dataType: "json",
 					// to test on local 
-					url: 'http://localhost:3000/',	
-					//url: '/',	//using the '/' url to prevent some cross-domain security error
+					//url: 'http://localhost:3000/',	
+					url: '/',	//using the '/' url to prevent some cross-domain security error
 					//async: false, // when we switch the async to false, the browser will sticks and we can't show the progress.
 					// exxecuting when request success
 					 success: function(data){
